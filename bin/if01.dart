@@ -6,5 +6,17 @@
         a: integer
     Returns:
         a: a increased by 1 if positive, else unchanged.
- */
-void main() {}
+    */
+    int func (a) {
+    
+        if (a > 0 ) {
+            return ( a + 1 );
+        }
+    
+    }
+    void main() {
+        print(func(24));
+    }
+
+
+
