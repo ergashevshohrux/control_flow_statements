@@ -10,9 +10,12 @@ int func(a){
 if ( a > 0 ){
     return ( a + 1 );
 }
+if (a < 0 ) {
+    return  a - 2;
+}
 
 }
 
 void main() {
-    print(func(2));
+    print(func(-2));
     }
