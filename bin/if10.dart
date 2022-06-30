@@ -12,5 +12,37 @@
         temp: integer
     Returns:
         string: the message to return*/
+        String func(number) {
+            String j = 'freezing';
+            String t = 'Very Cold';
+            String g = 'Cold';
+            String k = 'Normal';
+            String u = 'Hot';
+            String h = 'Very Hot';
 
-void main() {}
+            if (number < 0) {
+                return j;
+            }
+            if (number >= 1 && number <=10) {
+                return t;
+            }
+            if (number >= 11 && number <=20) {
+                return g;
+            }
+            if (number >= 21 && number <=30) {
+                return k;
+            }
+            if (number >= 31 && number <=40) {
+                return u;
+            }
+            if (number > 40) {
+                return u;
+            }
+            return number;
+            }
+            
+        
+
+void main() {
+    print(func(27));
+}
