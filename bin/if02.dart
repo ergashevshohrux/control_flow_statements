@@ -6,16 +6,20 @@
         a: integer
     Returns:
         a: a increased by 1 if positive, else decreased by 2.*/
-int func(a){
-if ( a > 0 ){
-    return ( a + 1 );
-}
-if (a < 0 ) {
-    return  a - 2;
-}
-
-}
-
-void main() {
-    print(func(-2));
+int func(int first,second,third){
+    if(first<second){
+        if(first<third){
+            return first;
+        }
+    else
+            return third;
+    }else
+    if(third<second){
+        return second;
+    }else{
+        return third;
     }
+    }
+void main(){
+    print(func(10,15,1));
+}
