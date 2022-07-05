@@ -9,13 +9,13 @@
 
 bool func(text) {
   int x = text.length;
-  if (x % 4== 0) {
-    return true;
+  if (x > 0) {
+    return (a + 1);
   }
-  return false;
+  return a - 2;
 }
 
 void main() {
   // write your code here
-  print(func("shohrux"));
+  print(func("-4"));
 }
